@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contactFormContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContactFormController">
+   <children>
+      <ImageView fitHeight="430.0" fitWidth="619.0" layoutX="-10.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/hm%20page.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="236.0" layoutY="14.0" text="Visit Us">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="512.0" layoutY="351.0" onAction="#openFacilities" style="-fx-background-color: #000000;" text="Next" textFill="#fcf7f7" />
+      <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="94.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/585e4adacb11b227491c3392.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="94.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/diti.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="93.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/5a4525cd546ddca7e1fcbc84.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="93.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/5a4e2ef62da5ad73df7efe6e.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="93.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/584856b4e0bb315b0f7675ac.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="177.0" layoutY="107.0" prefHeight="21.0" prefWidth="250.0" style="-fx-background-color: #191970;" text="www.bluehotel.com" textFill="#f2eaea" />
+      <Label alignment="CENTER" layoutX="177.0" layoutY="155.0" prefHeight="21.0" prefWidth="250.0" style="-fx-background-color: #191970;" text="Galle Rd, Hikkaduwa" textFill="#f8f0f0" />
+      <Label alignment="CENTER" layoutX="177.0" layoutY="198.0" prefHeight="21.0" prefWidth="250.0" style="-fx-background-color: #191970;" text="+915560005" textFill="#f5f0f0" />
+      <Label alignment="CENTER" layoutX="177.0" layoutY="250.0" prefHeight="21.0" prefWidth="250.0" style="-fx-background-color: #191970;" text="0705135422" textFill="#f8efef" />
+      <Label alignment="CENTER" layoutX="177.0" layoutY="297.0" prefHeight="21.0" prefWidth="250.0" style="-fx-background-color: #191970;" text="blueocean@gmail.com" textFill="#f2eaea" />
+      <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="336.0" onAction="#backToHome" style="-fx-background-color: #000000;" text="&lt;&lt;back" textFill="#ebe7e7" />
+   </children>
+</AnchorPane>

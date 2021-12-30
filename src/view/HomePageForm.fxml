@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="homePageFormContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageFormController">
+   <children>
+      <ImageView fitHeight="333.0" fitWidth="593.0" layoutX="5.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/beach%20side.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="5.0" layoutY="7.0" prefHeight="51.0" prefWidth="592.0" style="-fx-background-color: #2D2D84;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="504.0" layoutY="10.0" onAction="#openUserForm" style="-fx-background-color: #000000;" text="Log In" textFill="#f5f2f2" />
+            <JFXButton buttonType="RAISED" layoutX="407.0" layoutY="10.0" onAction="#openContactForm" style="-fx-background-color: #000000;" text="Contact" textFill="#f2eded" />
+            <JFXButton buttonType="RAISED" layoutX="316.0" layoutY="10.0" onAction="#openFacilities" style="-fx-background-color: #000000;" text="About" textFill="#f5eded" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="202.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To The">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="211.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blue Ocean">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="508.0" layoutY="74.0" onAction="#openSignForm" style="-fx-background-color: #000000;" text="Sign In" textFill="#f8f6f6" />
+      <Text layoutX="45.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need a luxury room best for you holiday" wrappingWidth="141.9404296875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

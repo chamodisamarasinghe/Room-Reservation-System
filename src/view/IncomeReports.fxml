@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="incomeReportsContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeReportsController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/write.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="247.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income Reports">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="14.0" layoutY="60.0" prefHeight="24.0" prefWidth="200.0" text="Expences" />
+      <AnchorPane layoutX="14.0" layoutY="114.0" prefHeight="200.0" prefWidth="186.0" style="-fx-background-color: #FFF8DC;">
+         <children>
+            <Text layoutX="41.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advertising" />
+            <Text layoutX="46.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insurance" />
+            <Text layoutX="41.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maintenance" />
+            <Text layoutX="52.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salaries" />
+            <Text layoutX="32.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telecommunication" />
+         </children>
+      </AnchorPane>
+      <Text fill="#f5efef" layoutX="51.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income" />
+      <Text fill="#f2ecec" layoutX="57.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit" />
+      <Separator layoutX="320.0" layoutY="60.0" orientation="VERTICAL" prefHeight="336.0" prefWidth="15.0" style="-fx-background-color: #000000;" />
+      <TableView layoutX="355.0" layoutY="67.0" prefHeight="319.0" prefWidth="227.0">
+        <columns>
+          <TableColumn prefWidth="108.0" text="Month" />
+          <TableColumn prefWidth="113.0" text="Year" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="19.0" layoutY="356.0" onAction="#backToAdmin" style="-fx-background-color: #000000;" text="&lt;&lt;back To Admin" textFill="#fcf3f3" />
+   </children>
+</AnchorPane>

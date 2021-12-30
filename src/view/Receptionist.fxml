@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="receptionistContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6495ED;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="56.0" layoutY="97.0" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: #0000FF;" text="Reserve a Room" textFill="#f2dcdc" />
+            <JFXButton buttonType="RAISED" layoutX="356.0" layoutY="97.0" onAction="#openMarkRoom" style="-fx-background-color: #0000FF;" text="Mark Room In Maintenance" textFill="#f5eded" />
+            <JFXButton buttonType="RAISED" layoutX="72.0" layoutY="176.0" onAction="#openAddGuestDetails" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #191970;" text="Add Guest Details" textFill="#f2ecec" />
+            <JFXButton buttonType="RAISED" layoutX="72.0" layoutY="231.0" onAction="#openCheckRoomAvailability" style="-fx-background-color: #191970;" text="Check Room Availability" textFill="#f2ecec" />
+            <JFXButton buttonType="RAISED" layoutX="72.0" layoutY="285.0" onAction="#openSelectMealPlan" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #191970;" text="Select Meal Plan" textFill="#f2ecec" />
+            <Text layoutX="200.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receptionist">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="56.0" layoutY="340.0" onAction="#backToUser" style="-fx-background-color: #000000;" text="&lt;&lt;Back to User" textFill="#ebe3e3" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

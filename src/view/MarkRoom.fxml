@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="markRoomContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MarkRoomController">
+   <children>
+      <ImageView fitHeight="419.0" fitWidth="617.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/mainta.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="22.0" text="Mark Rooms In Maintenance">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <TableView layoutX="6.0" layoutY="109.0" prefHeight="249.0" prefWidth="418.0">
+        <columns>
+          <TableColumn prefWidth="195.0" text="Maintaining Room No" />
+            <TableColumn prefWidth="222.0" text="Realising Time" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="26.0" layoutY="370.0" onAction="#backToReceptionist" style="-fx-background-color: #000000;" text="&lt;&lt;back To Receptionist" textFill="#f8f5f5" />
+   </children>
+</AnchorPane>

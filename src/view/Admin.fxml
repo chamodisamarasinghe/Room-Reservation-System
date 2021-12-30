@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="adminContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <ImageView fitHeight="434.0" fitWidth="662.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/enjoy-ocean-view-infinity-pool-260nw-207653242.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="237.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="237.0" layoutY="146.0" onAction="#openRooms" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #000000;" text="Rooms" textFill="#e8e1e1" />
+      <JFXButton buttonType="RAISED" layoutX="234.0" layoutY="213.0" onAction="#openMealPackages" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #000000;" text="Meal Packages" textFill="#f8eded" />
+      <JFXButton buttonType="RAISED" layoutX="237.0" layoutY="274.0" onAction="#openIncomeReports" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #000000;" text="Income Reports" textFill="#f5f2f2" />
+      <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="406.0" onAction="#backToUserForm" style="-fx-background-color: #000000;" text="&lt;&lt;back To User Form " textFill="#fcf3f3" />
+   </children>
+</AnchorPane>

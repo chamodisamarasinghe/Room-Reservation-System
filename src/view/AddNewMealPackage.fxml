@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewMealPackageContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewMealPackageController">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="400.0" fitWidth="600.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/frech%20m1.jpg" />
+         </image>
+         <effect>
+            <BoxBlur iterations="2" />
+         </effect>
+      </ImageView>
+      <AnchorPane prefHeight="30.0" prefWidth="602.0" style="-fx-background-color: #4C4646;" />
+      <Separator layoutX="95.0" layoutY="100.0" orientation="VERTICAL" prefHeight="285.0" prefWidth="6.0" style="-fx-background-color: #000000;" />
+      <TextField layoutX="16.0" layoutY="178.0" prefHeight="31.0" prefWidth="82.0" text="Breakfast" />
+      <TextField layoutX="16.0" layoutY="227.0" prefHeight="31.0" prefWidth="82.0" text="Lunch" />
+      <TextField layoutX="16.0" layoutY="286.0" prefHeight="31.0" prefWidth="82.0" text="Dinner" />
+      <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="140.0" style="-fx-background-color: #000000;" text="Search" textFill="#fcf2f2" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="355.0" onAction="#backToMealPackages" style="-fx-background-color: #000000;" text="&lt;&lt;back To Meal Packages" textFill="#fcf5f5" />
+      <TextField layoutX="14.0" layoutY="30.0" text="+Add NewMeal Package">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblMeals" layoutX="222.0" layoutY="244.0" prefHeight="142.0" prefWidth="364.0">
+        <columns>
+          <TableColumn fx:id="colLocal" prefWidth="112.0" text="Local" />
+          <TableColumn fx:id="colChinese" prefWidth="132.0" text="Chinese" />
+            <TableColumn fx:id="colFrench" prefWidth="118.0" text="French" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtLocal" labelFloat="true" layoutX="347.0" layoutY="60.0" promptText="Local">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtFrench" labelFloat="true" layoutX="347.0" layoutY="171.0" promptText="Frensh">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="118.0" layoutY="302.0" onAction="#addMeals" style="-fx-background-color: #000000;" text="Add Meals" textFill="#eee8e8" />
+      <JFXTextField fx:id="txtChinese" labelFloat="true" layoutX="332.0" layoutY="109.0" promptText="Chinese">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

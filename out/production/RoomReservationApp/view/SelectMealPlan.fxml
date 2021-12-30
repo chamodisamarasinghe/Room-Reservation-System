@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="selectMealPlanContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectMealPlanController">
+   <children>
+      <ImageView fitHeight="357.0" fitWidth="246.0" layoutX="348.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/sri-lankan-breakfast%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="14.0" text="Select Meal Plan" textFill="#232325">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="107.0" text="Breakfast" />
+      <Label layoutX="27.0" layoutY="153.0" prefHeight="21.0" prefWidth="61.0" text="Lunch" />
+      <Label layoutX="27.0" layoutY="200.0" prefHeight="21.0" prefWidth="61.0" text="Dinner" />
+      <Label layoutX="27.0" layoutY="247.0" prefHeight="21.0" prefWidth="61.0" text="Desert" />
+      <Label layoutX="27.0" layoutY="301.0" prefHeight="21.0" prefWidth="61.0" text="Drinks" />
+      <TableView layoutX="183.0" layoutY="74.0" prefHeight="320.0" prefWidth="260.0">
+        <columns>
+          <TableColumn prefWidth="81.0" text="Local" />
+          <TableColumn prefWidth="86.0" text="Chinese" />
+            <TableColumn prefWidth="86.0" text="French" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="4.0" layoutY="363.0" onAction="#backToReceptionist" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: #000000;" text="&lt;&lt;back To Receptionist" textFill="#f8f1f1" />
+   </children>
+</AnchorPane>
