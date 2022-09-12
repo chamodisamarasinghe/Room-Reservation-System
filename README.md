@@ -1,2 +1,2 @@
 # Room-Reservation-System
-SE course work
+JavaFX course work
