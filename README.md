@@ -2,4 +2,4 @@
 JavaFX course work
 
 
-<img src="src/assets/img/home.png" width="1000">
+<img src="src/assets/img/home.png" width="800">
